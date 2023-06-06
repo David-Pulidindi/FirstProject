@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+    </head>
+    <body>
+        <script>
+        let numbers = [8, 4, 9, 2, 6, 1, 7, 5];
+        console.log("Array " + numbers)
+
+        let sortingNumbers = numbers.sort();
+        console.log("Sorting: " + numbers);
+
+        let removingNumbers = numbers.shift();
+        console.log("After removing of first element in the given array: " + numbers);
+
+        let addingNumbers = numbers.push(10);
+        console.log("After adding 10 to the Array: " + numbers);
+
+        let index = numbers.indexOf(6);
+        console.log("The index of 6 in the array is: " + index);
+        
+        let includesSeven = numbers.includes(7);
+        console.log("Checking whether there is a number 7 in the given array: " + includesSeven);
+
+        function EvenNumbers(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] % 2 === 0) {
+                console.log("Even numbers in the given array: " + arr[i]);
+                }
+            }
+            }
+            EvenNumbers(numbers);
+        </script>
+    </body>
+</html>
